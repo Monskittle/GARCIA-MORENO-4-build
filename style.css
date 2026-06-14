@@ -1,0 +1,78 @@
+/* CSS written by Monica Garcia */
+
+header {
+  text-align: center;
+  background-color: rgb(33, 70, 113);
+  color: white;
+  padding: 15px;
+}
+
+img {
+    transform: rotate(90deg);
+    width: 100%;
+    max-width: 300px;
+    margin: -150px auto;
+    display: block;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  gap: 150px;
+  list-style: none;
+  padding: 10px;
+}
+
+main section {
+    flex: 1;
+} 
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px;
+}
+
+footer { 
+    background-color: rgb(33, 70, 113);
+    color: white;
+    padding: 15px;
+}
+
+/* Global Styles (mobile first) */
+body {
+    display:grid;
+    grid-template-columns:1fr;
+    gap: 20px;
+    font-family: 'arial', sans-serif;
+    background-color:rgb(176, 208, 227);
+      padding: 10px;
+}
+@media screen and (max-width: 600px){
+    img {
+        transform: rotate(90deg);
+        width: 50%;
+        max-width: 300px;
+        margin: -120px auto;
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        gap: 5px;
+        list-style: none;
+        padding: 5px;
+    }
+    body {
+        display:grid;
+        grid-template-columns:1fr;
+        background-color:rgb(176, 208, 227);
+    }
+    main {
+        display: block;
+    }
+}
